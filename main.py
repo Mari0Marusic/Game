@@ -20,7 +20,7 @@ def answer():
     secret_number = int(request.cookies.get("secret_number"))
 
     if guess == secret_number:
-        message = "Congratulation you guessed a secret number!"
+        message = "Congratulations! You guessed a secret number!"
         response = make_response(render_template("answer.html", message=message))
         new_secret = random.randint(1, 20)
         response.set_cookie("secret_number", str(new_secret))
