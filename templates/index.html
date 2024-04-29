@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<div class="container">
     <form method="post" action="/answer">
-        <input type="text" name="guess" placeholder="Enter your guess">
+        <input type="text" id="guess" name="guess" placeholder="Enter your guess">
         <br><br>
         <button type="submit">Submit</button>
     </form>
-
+</div>
 {% endblock content %}

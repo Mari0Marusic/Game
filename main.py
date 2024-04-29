@@ -32,5 +32,10 @@ def answer():
         message = "Your guess is wrong, Try something bigger!"
         return render_template("answer.html", message=message)
     
+@app.route("/google")
+def google():
+    return ("Thank you for playing!")
+    
+    
 if __name__ == '__main__':
     app.run(use_reloader=True)
